@@ -122,10 +122,10 @@ if __name__ == '__main__':
     MIN_INCLUDED_TIMES = 1
     
     ##### Following lines are used to generate data
-    PONE_PATH = '/mnt/personal/vacekpa2/data/PONE/Veh01_20240807_102809_000_PCD.npz'
-    pts = load_and_sample_PONE_data(PONE_PATH, frame=0, max_frame=6)
-    pts[:, 3] = pts[:, 3] * EPS / (MAX_ADJACENT_TIMES + 0.01)   # specified time constraints for clustering
-    np.save('data/pts.npy', pts)
+    # PONE_PATH = '/mnt/personal/vacekpa2/data/PONE/Veh01_20240807_102809_000_PCD.npz'
+    # pts = load_and_sample_PONE_data(PONE_PATH, frame=0, max_frame=6)
+    # pts[:, 3] = pts[:, 3] * EPS / (MAX_ADJACENT_TIMES + 0.01)   # specified time constraints for clustering
+    # np.save('data/pts.npy', pts)
 
     pts = np.load('data/pts.npy')
     
