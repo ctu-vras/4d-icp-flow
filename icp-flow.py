@@ -3,7 +3,6 @@ import os
 import numpy as np
 import time
 import matplotlib.pyplot as plt
-import torch
 import open3d as o3d
 from tqdm import tqdm
 from sklearn.cluster import DBSCAN
